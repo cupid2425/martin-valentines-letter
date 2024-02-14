@@ -47,11 +47,12 @@
         }
         .bear-img {
             position: relative;
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 150px; 
-            bottom: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .bear-img img {
+            margin: 0px 2px 3px;
+            width: 12%;
         }
     </style>
 </head>
@@ -72,7 +73,10 @@
             <p>Sincerely Yours,</p>
             <p>Martin</p>
         </div>
-        <img src="jinny.jpg" alt="bear" class="bear-img">
+        <div class="bear-img">
+            <img src="jinny2.jpg" alt="bear">
+            <img src="jinny.jpg" alt="bear">
+        </div>
     </div>
 
 </div>
