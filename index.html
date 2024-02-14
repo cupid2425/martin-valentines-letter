@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY VALENTINE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d61c1c;
+            text-align: center;
+        }
+        .letter {
+            margin-bottom: 20px;
+            position: relative; 
+        }
+        .signature {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .envelope {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .envelope img {
+            width: 650px; 
+            cursor: pointer;
+        }
+        .signature img {
+            position: absolute; 
+            bottom: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        }
+        .bear-img {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 150px; 
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>MY VALENTINE</h1>
+
+    <div class="envelope">
+        <img src="Jinnybear.png" alt="envelope" onclick="toggleLetter()">
+    </div>
+
+    <div class="letter" id="letter" style="display:none;">
+        <p>Dear Jinnybear,</p>
+        <p>You know what on this special day, I want to express my deepest feelings for you. You bring so much joy and happiness into my life, and I am incredibly grateful for your presence.</p>
+        <p>You inspire me to be a better person every day. Thank you for being my partner, my confidant, and my best friend. I love you more than words can express!  MUCH LOVE!</p>
+        <div class="signature">
+            <p>Sincerely Yours,</p>
+            <p>Martin</p>
+        </div>
+        <img src="jinny.jpg" alt="bear" class="bear-img">
+    </div>
+
+</div>
+
+<script>
+    function toggleLetter() {
+        var envelope = document.querySelector('.envelope');
+        var letter = document.getElementById('letter');
+
+        if (envelope.style.display !== 'none') {
+            envelope.style.display = 'none';
+            letter.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
